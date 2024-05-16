@@ -143,47 +143,48 @@
 
     </header>
 
-    <section class="login-section">
-        <div class="container login-container">
-            <h1 class="login-title">Log in</h1>
-            <h1 class="login-mob">Log in</h1>
-            <form class="login-form w-100">
-                <input type="email" class="form-control  input-field" placeholder="Email address">
-                <div class="password-box" style="position: relative;">
-                    <input type="password" class="form-control  input-field w-100" id="password" placeholder="Password">
-                    <img src="./img/eye-icon.svg" alt="" class="btn p-0 eye-icon"
-                        style="position: absolute; top: 16px; right: 16px;">
+    <section class="contact-section">
+        <div class="container contact-container">
+            <div class="contact-top">
+                <h2 class="contact-title">Get in touch</h2>
+                <h1 class="contact-mob">Get in touch</h1>
+                <p class="contact-sub">Complete the form below, and we'll respond promptly.</p>
+                <div class="contact-add">
+                    <p class="contact-details">1234567890</p>
+                    <p class="contact-details">support@123Translators.Com</p>
+                    <p class="contact-details">&nbsp;Gangnam-&nbsp;gu&nbsp;,&nbsp;Seoul&nbsp;(postcode:&nbsp;11111)</p>
                 </div>
+            </div>
+            <form class="contact-form w-100">
+                <div class="text-field">
+                    <input type="text" class="form-control input-field" placeholder="First Name">
+                    <input type="email" class="form-control input-field" placeholder="Email Address">
+                </div>
+                <textarea class="form-control input-field-area w-100 " id="" rows="4" cols="50"
+                    placeholder="Comment"></textarea>
             </form>
-            <div class="login-bottom">
-                <button type="button" class="btn pink-button w-100">Sign in</button>
-                <a class=forgot-link>Forgot your password?</a>
+            <div class="contact-bottom">
+                <div class="checkbox-sec w-100 ">
+                    <div class="checkbox">
+                        <div class="c-checkboxF mb-0">
+                            <div class="c-divF">
+                                <label class="d-flex justify-content-center justify-content-lg-start">
+                                    <input type="checkbox" id="terms" name="terms">
+                                    <label for="terms"></label>
+                                </label>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <p class="agree-text mb-0">By clicking the button you acknowledge that you have read and agree to
+                        the <a class="terms-link">Terms of Use.</a></p>
+                </div>
+                <img src="./img/captcha.png" class="img-fluid">
+                <button type="button" class="pink-button btn w-100">Submit</button>
             </div>
         </div>
 
-    </section>
-
-    <section class="register-section">
-        <div class="container register-conatiner">
-            <h1 class="login-title">Sign up</h1>
-            <h1 class="login-mob">or Sign up</h1>
-            <form class="register-form w-100">
-                <input type="text" class="form-control input-field" placeholder="First name">
-                <input type="text" class=" form-control input-field" placeholder="Last name">
-                <input type="email" class="form-control  input-field" placeholder="Email address">
-                <input type="text" class="form-control  input-field" placeholder="Comment">
-                <input type="password" class="form-control  input-field" placeholder="Confirm password">
-            </form>
-            <div class="login-bottom">
-                <div class="agree-txt">
-                    <p class="terms-text ">By clicking “Confirm” you acknowledge that you have read and agree to the <a
-                            class="link-txt"> Terms and Conditions.</a></p>
-                </div>
-                <div class="captcha-div w-100">
-                    <img src="./img/captcha.png" class="img-fluid">
-                    <button type="button" class="btn pink-button w-100">Confirm</button>
-                </div>
-            </div>
         </div>
 
     </section>
