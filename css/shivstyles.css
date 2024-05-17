@@ -613,6 +613,7 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 gap: 24px;
+border-radius: 10px;
 }
 
 .account-info{
@@ -664,6 +665,100 @@ line-height: 150%; /* 27px */
 
 /*account popups*/
 
+/*terms condition page*/
+
+.termscondition-section{
+    background: var(--Core-Off-White, #F6F6F6);
+    display: flex;
+padding: 104px 0px;
+justify-content: center;
+align-items: flex-start;
+gap: 32px;
+align-self: stretch;
+margin-top: 128px;
+}
+.terms-conatiner{
+    display: flex;
+    align-items: flex-start;
+    gap: 32px;
+}
+
+.tc-title{
+    color: var(--Core-Burnt-Candy, #3C0822);
+font-family: Outfit;
+font-size: 56px;
+font-style: normal;
+font-weight: 500;
+line-height: 120%; /* 67.2px */
+letter-spacing: -1.12px;
+text-transform: capitalize;
+flex: 1 0 0;
+margin: 0px;
+}
+
+.tc-content{
+    display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 32px;
+flex: 1 0 0;
+}
+.tc-conditions{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 16px;
+align-self: stretch;
+}
+.tc-subtitle{
+    color: var(--Core-Burnt-Candy, #3C0822);
+font-family: Outfit;
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+line-height: 140%; /* 33.6px */
+margin: 0px;
+}
+.tc-data{
+    color: var(--Core-Coolant, #2D32A7);
+font-family: "DM Sans";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; /* 24px */
+margin: 0px;
+}
+.tc-mobtitle{
+    color: var(--Core-Burnt-Candy, #3C0822);
+font-family: Satoshi;
+font-size: 32px;
+font-style: normal;
+font-weight: 700;
+line-height: 120%; /* 38.4px */
+text-transform: capitalize;
+margin: 0px;
+}
+.tc-mobsubtitle{
+    color: var(--Core-Burnt-Candy, #3C0822);
+font-family: Outfit;
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+line-height: 120%; /* 28.8px */
+text-transform: capitalize;
+margin: 0px;
+}
+.tc-mobtitle{
+    display: none;
+}
+.tc-mobsubtitle{
+    display: none;
+}
+.tc-mobsubtitle{
+    display: none;
+}
+/*terms condition page*/
 
 /* Mobile screen devices*/
 
@@ -810,4 +905,25 @@ text-transform: capitalize;
     padding: 40px 24px;
     max-width: 248px;
 }
+/*tc page*/
+.tc-title{
+    display: none;
+}
+.tc-subtitle{
+    display: none;
+}
+.tc-mobtitle{
+    display: block;
+}
+.tc-mobsubtitle{
+    display: block;
+}
+.termscondition-section{
+    margin-top: 70px;
+    padding: 40px 24px;
+}
+.terms-conatiner{
+    flex-direction: column;
+}
+
 }
