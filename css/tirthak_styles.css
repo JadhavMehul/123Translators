@@ -222,6 +222,20 @@
 
 /*  ct section 1 start */
 
+.p_small {
+    text-align: center;
+    font-family: Outfit;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+    background: var(--Core-Accents-Candy, linear-gradient(180deg, #F363AA 0%, #E471C9 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 0;
+}
+
 .ct_sec1 {
     background: url(../img/ct_sec1.png);
     background-repeat: no-repeat;
@@ -309,6 +323,17 @@
 
 
 .sec2_ct {
+    padding: 80px 0px;
+    background: var(--Core-Off-White, #F6F6F6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 64px;
+    align-self: stretch;
+}
+
+.home_sec2_ct {
     padding: 80px 0px;
     background: var(--Core-Off-White, #F6F6F6);
     display: flex;
@@ -527,6 +552,18 @@
     align-items: flex-start;
     margin-left: auto;
     margin-right: 272px;
+
+}
+
+.right_now_home {
+
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: 576px;
+    align-items: flex-start;
+    margin-left: auto;
+    margin-right: 104px;
 
 }
 
@@ -1198,6 +1235,17 @@ input[type=radio] {
 
 @media only screen and (max-width: 600px) {
 
+    .p_small_mob {
+        color: var(--Core-Burnt-Candy, #3C0822);
+        text-align: center;
+        font-family: Outfit;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 140%; 
+        margin-bottom: 0;
+    }
+
     .extra_align {
         text-align: center!important;
    }
@@ -1348,6 +1396,10 @@ input[type=radio] {
         padding: 40px 24px;
         gap: 32px;
     }
+    .home_sec2_ct {
+        padding: 64px 24px;
+        gap: 32px;
+    }
 
 
     .first_wala {
@@ -1465,6 +1517,12 @@ input[type=radio] {
         width: auto;
     }
     .right_now_us {
+        gap: 32px;
+        margin: 0;
+        width: auto;
+    }
+
+    .right_now_home {
         gap: 32px;
         margin: 0;
         width: auto;
@@ -1768,6 +1826,10 @@ input[type=radio] {
         margin-right: 125px;
     }
 
+    .right_now_home  {
+        margin-right: 30px;
+    }
+
     .rightof4{
         width: 500px;
     }
@@ -1793,6 +1855,10 @@ input[type=radio] {
         margin-right: 125px;
     }
 
+    .right_now_home  {
+        margin-right: 40px;
+    }
+
     .rightof4{
         width: 500px;
     }
@@ -1812,6 +1878,10 @@ input[type=radio] {
 @media only screen and (min-width: 1440px) and (max-width:1499px) {
     .right_now_us  {
         margin-right: 198px;
+    }
+
+    .right_now_home  {
+        margin-right: 74px;
     }
 
     .rightof4{
