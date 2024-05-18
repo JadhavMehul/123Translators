@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,13 +12,15 @@
     <link rel="stylesheet" href="./css/owl.carousel.min.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/m_styles.css">
+    <link rel="stylesheet" href="./css/shivstyles.css">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Outfit:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    
+
 </head>
+
 <body>
     <header class="fixed-top">
         <div class="header_top">
@@ -28,7 +31,7 @@
                             <img src="./img/header_logo.svg" alt="" class="img-fluid">
                         </a>
                     </div>
-                    
+
                     <div class="header_right">
                         <div class="header_dropbox">
                             <button class="btn btn_header">
@@ -68,9 +71,9 @@
             <div class="container mobile_header">
                 <div class="header_mobo_main">
                     <!-- <div class="header_mobo_center"> -->
-                        <!-- <button class="btn p-0"> -->
-                            <img src="./img/header_mobo.svg" alt="" class="img-fluid">
-                        <!-- </button> -->
+                    <!-- <button class="btn p-0"> -->
+                    <img src="./img/header_mobo.svg" alt="" class="img-fluid">
+                    <!-- </button> -->
                     <!-- </div> -->
                     <div class="header_mobo_right">
                         <div class="hamburger_menu">
@@ -91,7 +94,8 @@
                 <div class="header_mobo_drop_flexer">
                     <div class="header_mobo_drop_left">
                         <div class="currency_drop_div">
-                            <button class="btn btn_header me-auto" onclick="currency_drop('currency_drop2', 'currency_drop_logo2')">
+                            <button class="btn btn_header me-auto"
+                                onclick="currency_drop('currency_drop2', 'currency_drop_logo2')">
                                 Our Solutions
                                 <img src="./img/drop_icon.svg" alt="" class="img-fluid" id="currency_drop_logo2">
                             </button>
@@ -133,45 +137,105 @@
                 </button>
             </div>
         </div>
-        
-        
+
+
     </header>
 
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+    <section class="login-section">
+        <div class="container login-container">
+            <h1 class="login-title">Log in</h1>
+            <h1 class="login-mob">Log in</h1>
+            <form class="login-form w-100">
+                <input type="email" class="form-control  input-field" placeholder="Email address">
+                <div class="password-box" style="position: relative;">
+                    <input type="password" class="form-control  input-field w-100" id="password" placeholder="Password">
+                    <img src="./img/eye-icon.svg" alt="" class="btn p-0 eye-icon"
+                        style="position: absolute; top: 16px; right: 16px;">
+                </div>
+            </form>
+            <div class="login-bottom">
+                <button type="button" class="btn pink-button w-100">Sign in</button>
+                <a class=forgot-link>Forgot your password?</a>
+            </div>
+        </div>
+
+
+
+    </section>
+
+    <section class="register-section">
+        <div class="container register-conatiner">
+            <h1 class="login-title">Sign up</h1>
+            <h1 class="login-mob">or Sign up</h1>
+            <form class="register-form w-100">
+                <input type="text" class="form-control input-field" placeholder="First name">
+                <input type="text" class=" form-control input-field" placeholder="Last name">
+                <input type="email" class="form-control  input-field" placeholder="Email address">
+                <input type="text" class="form-control  input-field" placeholder="Comment">
+                <input type="password" class="form-control  input-field" placeholder="Confirm password">
+            </form>
+            <div class="login-bottom">
+                <div class="agree-txt">
+                    <p class="terms-text ">By clicking “Confirm” you acknowledge that you have read and agree to the <a
+                            class="link-txt"> Terms and Conditions.</a></p>
+                </div>
+                <div class="captcha-div w-100">
+                    <img src="./img/captcha.png" class="img-fluid">
+                    <button type="button" class="btn pink-button w-100"  data-bs-toggle="modal" data-bs-target="#myModal" >Confirm</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Account created success-->
+        <div class="modal" id="myModal">
+            <div class="modal-dialog modal-dialog-centered account_modal_outline" style="justify-content: center; max-width: 782px;">
+                <div class="modal-content account_modal_content" style="width: auto; border-radius: 10px;">
+                    <div class="modal-body account_modal_body">
+                        <img src="./img/account-tick.png" class="img-fluid d-md-none d-lg-block d-none">
+                        <div class="account-info d-lg-block d-md-block d-none">
+                            <h2 class="account_title mb-3">Account Successfully Created!</h2>
+                            <p class="account-text m-0">Diam tincidunt vestibulum pharetra nulla non nullam. Tellus lobortis.</p>
+                        </div>
+                        <div class="account-mobo d-lg-none d-md-none d-block">
+                            <h1 class="login-mob text-center mb-3">Account Successfully Created!</h1>
+                            <p class="account-text m-0">Diam tincidunt vestibulum pharetra nulla non nullam. Tellus lobortis.</p>
+                        </div>
+                        <button type="button" class="btn pink-button "style="width: 200px;"  data-bs-toggle="modal"
+                        data-bs-target="#myModal1">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Account created success-->
+
+
+
+        <!-- Something Went Wrong-->
+        <div class="modal" id="myModal1">
+            <div class="modal-dialog modal-dialog-centered account_modal_outline" style="justify-content: center; max-width: 782px;">
+                <div class="modal-content account_modal_content" style="width: auto; border-radius: 10px;">
+                    <div class="modal-body account_modal_body">
+                        <img src="./img/warning.png" class="img-fluid d-md-none d-lg-block d-none">
+                        <div class="account-info d-lg-block d-md-block d-none">
+                            <h2 class="account_title mb-3">Something went wrong</h2>
+                            <p class="warning-text m-0">Diam tincidunt vestibulum pharetra nulla non nullam. Tellus lobortis.</p>
+                        </div>
+                        <div class="account-mobo d-lg-none d-md-none d-block">
+                            <h1 class="login-mob text-center mb-3">Something
+                                went wrong</h1>
+                            <p class="warning-text m-0">Diam tincidunt vestibulum pharetra nulla non nullam. Tellus lobortis.</p>
+                        </div>
+                        <button type="button" class="btn pink-button "style="width: 200px;" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Account created success-->
+
+
+
+
+    </section>
 
     <footer class="footer">
         <div class="container">
@@ -225,45 +289,49 @@
             </div>
         </div>
     </footer>
-  
-    
-        
-   
+
+
+
+
 
     <script src="./dist/js/jquery.min.js"></script>
     <script src="./dist/js/owl.carousel.js"></script>
     <!-- <script src="./dist/js/bootstrap.min.js"></script>
     <script src="./dist/js/bootstrap.bundle.min.js"></script> -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
-    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous">
+    </script>
+
     <script>
-        $(document).ready(function() {
-            $(".hamburger_menu").click(function(){
+        $(document).ready(function () {
+            $(".hamburger_menu").click(function () {
                 $(".header_mobo_main_slide").fadeIn("slow");
                 $(".hamburger_menu").fadeOut("slow");
                 $(".hamburger_menu_close").fadeIn("slow");
                 $(".header_top").addClass("gradient_border");
             });
-            $(".hamburger_menu_close").click(function(){
+            $(".hamburger_menu_close").click(function () {
                 $(".header_mobo_main_slide").fadeOut("slow");
                 $(".hamburger_menu").fadeIn("slow");
                 $(".hamburger_menu_close").fadeOut("slow");
                 $(".header_top").removeClass("gradient_border");
             });
-            $(".hamburger_cart").click(function(){
+            $(".hamburger_cart").click(function () {
                 $(".header_cart_mobo_main_slide").fadeIn("slow");
                 $(".hamburger_menu").fadeOut("slow");
                 $(".cart_menu_close").fadeIn("slow");
             });
-            $(".cart_menu_close").click(function(){
+            $(".cart_menu_close").click(function () {
                 $(".header_cart_mobo_main_slide").fadeOut("slow");
                 $(".cart_menu_close").fadeOut("slow");
                 $(".hamburger_menu").fadeIn("slow");
             });
         });
 
-        
+
 
         function currency_drop(drop_id, logo_id) {
             var a = document.getElementById(drop_id);
@@ -276,7 +344,7 @@
                 b.style.rotate = '0deg';
             }
         }
-        
+
         function desk_cart() {
             var a = document.getElementById('cart_drop');
             var b = document.getElementById('cart_btn');
@@ -288,9 +356,8 @@
                 b.classList.remove('active');
             }
         }
-
-
     </script>
 
 </body>
+
 </html>
