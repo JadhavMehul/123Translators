@@ -239,6 +239,19 @@ input[type=checkbox], input[type=radio] {
     line-height: 150%; /* 24px */
     margin-bottom: 0px;
 }
+.home_page .js2 {
+    background: var(--Grayscale-White, #FBFCFF);
+    padding-top: 72px;
+    padding-bottom: 72px;
+    position: relative;
+    z-index: 10;
+}
+.home_page .js2_card {
+    border-radius: var(--Sml, 10px);
+    background: var(--Grayscale-White, #F6F6F6);
+    padding: 40px;
+    min-height: 249px;
+}
 .js3 {
     background: #fbfcff;
     padding: 64px 0px;
